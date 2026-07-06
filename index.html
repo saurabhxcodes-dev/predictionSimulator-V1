@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="upperContainer" class="col-12 col-md-6 main-container">
+        <div class="d-flex flex-row justify-content-between">
+          <p>userId: <span id="userId"></span></p>
+          <p>Balance: <span id="balance"></span></p>
+        </div>
+        <p id="timer">00:00</p>
+        <div class="d-flex flex-row justify-content-center">
+          <div id="betStatusIndicator" class="bet-status-indicator"></div>
+          <p id="betOpenClose">Bet Open</p>
+        </div>
+        <div class="d-flex flex-row justify-content-between mb-3">
+          <button class="color-buttons" style="background-color: violet" data-color="violet"></button>
+          <button class="color-buttons" style="background-color: indigo" data-color="indigo"></button>
+          <button class="color-buttons" style="background-color: blue" data-color="blue"></button>
+          <button class="color-buttons" style="background-color: green" data-color="green"></button>
+          <button class="color-buttons" style="background-color: yellow" data-color="yellow"></button>
+          <button class="color-buttons" style="background-color: orange" data-color="orange"></button>
+          <button class="color-buttons" style="background-color: red" data-color="red"></button>
+        </div>
+        <div class="d-flex flex-row justify-content-between mb-5">
+          <button class="big-small-btns" data-choice="big">Big</button>
+          <div id="currentBetContainer" class="d-none d-md-block"></div>
+          <button class="big-small-btns" data-choice="small">Small</button>
+        </div>
+      </div>
+
+      <div id="lowerContainer" class="col-12 col-md-6 main-container">
+        <div class="d-flex flex-row justify-content-center ">
+          <p class="history-tab mt-3 mb-0">History</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+          <button class="result-myBets-button" data-choice="results">Results</button>
+          <button class="result-myBets-button" data-choice="myHistory">My Bets</button>
+        </div>
+        <div id="historyContent">
+          <div id="resultInfoContainer">
+
+          </div>
+          <div id="myBetsInfoContainer">
+
+          </div>
+        </div>
+        <div id="placeBetContainer" class="mt-4">
+          <input id="coinsInput" type="text" class="amount-input" />
+          <button id="placeBetBtn" class="place-bet-btn">Bet</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
