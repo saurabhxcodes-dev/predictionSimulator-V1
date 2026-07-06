@@ -9,6 +9,11 @@
     padding-top: 10px;
 }
 
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+}
+
 .bet-status-indicator {
     height: 14px;
     width: 14px;
@@ -37,6 +42,28 @@
     font-size: 20px;
 }
 
+.current-bet-container {
+    text-align: left;
+    background-color: #334155;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    height: 40%;
+}
+
+.current-bet-heading {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.current-bet-round {
+    font-family: roboto;
+    font-size: 32px;
+    font-weight: weight;
+}
+
 .history-tab {
     background-color: #334155;
     height: 36px;
@@ -53,11 +80,28 @@
     height: 48px;
     width: 50vw;
     border: solid;
+    border-color: #334155;
     border-width: 1px;
-    background-color: green;
+    background-color: chocolate;
     color: white;
     font-family: Roboto;
     font-size: 24px;
+}
+
+.results-btn {
+    border-top-left-radius: 12px;
+}
+
+.my-history-btn {
+    border-top-right-radius: 12px;
+}
+
+.active-color {
+    background-color: chocolate;
+}
+
+.passive-color {
+    background-color: darkslategray;
 }
 
 .amount-input {
@@ -76,6 +120,11 @@
 
 #placeBetContainer {
     display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .result-color-circles {
